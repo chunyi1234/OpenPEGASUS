@@ -9,3 +9,8 @@ target_sources(pegasus PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}/linear_transform.cc
   ${CMAKE_CURRENT_LIST_DIR}/chevb_approximator.cc
 )
+target_include_directories(
+  pegasus
+  PUBLIC
+  ${PROJECT_SOURCE_DIR}
+)
